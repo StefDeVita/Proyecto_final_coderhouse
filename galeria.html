@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="menuInicio" class="flexbox">
+                <li><a href="index.html" >Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="galeria.html">Galeria</a>  </li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="dondever.html">Donde ver</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <div class="galeria">
+        <h4 id="tituloImagenes" class="galeria__titulo">Imagenes de la serie</h4>
+        <div id="carouselImagenes" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+          
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/gojo.jpg" alt="gojo">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/sukuna.webp" alt="sukuna">
+              </div>
+              <div class="carousel-item">
+                  <img class="d-block w-100" src="img/todo.webp" alt="todo">
+              </div>
+            </div>
+          
+        
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselImagenes" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselImagenes" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+          
+        </div>
+        
+        <div id="listaCanciones" class="galeria__objeto">         
+            <label class="galeria__etiqueta" for="opening"><p>Opening de la serie:</p>
+                <iframe id="opening" data-aos="fade-up" data-aos-duration="2000" class="galeria__objeto" width="560" height="315" src="https://www.youtube.com/embed/v8bZVdTgXoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </label>
+            <label class="galeria__etiqueta" for="ending"><p>Ending de la serie:</p>
+                <iframe data-aos="fade-up" data-aos-duration="2000" id="ending" class="galeria__objeto" width="560" height="315" src="https://www.youtube.com/embed/Iw2Wr_LKOpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </label>
+        </div>
+        <h4 id="tituloSoundtrack" class="galeria__titulo">Escuchá el soundtrack de la serie </h4>
+        <iframe  id="playlist" class="galeria__objeto" src="https://open.spotify.com/embed/playlist/38IFFuHaK1pT32iOsizJm2" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <h4 id="tituloClips" class="galeria__titulo">Clips de la serie</h4>
+        <div id="contenedorClips">
+            <iframe id="clip1" width="560" height="315" src="https://www.youtube.com/embed/Yor3Df1W3mQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="clip2" width="560" height="315" src="https://www.youtube.com/embed/JbvEUL1xzyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <ul class="footer">
+            <li>
+                <section class="footer__copyright">
+                    <p>Página sin fines de lucro</p>
+                    <p>Copyright Stefano De Vita©</p>
+                </section>
+            </li>
+        <li>
+            <aside class="footer__redes">
+                <a href="https://www.facebook.com/jujutsu.kaisen.official"><img class="footer__imagen" src="img/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/jujutsukaisen/?hl=es"><img class="footer__imagen" src="img/instagram.png" alt="facebook"></a>
+            </aside>
+        </li>
+        </ul>
+        
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

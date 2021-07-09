@@ -1,0 +1,329 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+@mixin boxModeling($margin,$padding){
+    margin: $margin;
+    padding: $padding;
+}
+body{
+    background-color: #61001F;
+}
+h1 ,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F58A3D;
+}
+h3,h4{
+    color: #F58A3D;
+}
+
+p{
+    color: #DE6943;
+}
+ul{
+    ul{
+        position: absolute;
+        display: none;
+        li{
+            display: block;
+            color: #EBA13B;
+        }
+    }
+    li{
+        @include boxModeling(5px,0);
+        list-style: none;
+        a{
+            color: #EBA13B;
+            @include boxModeling(0,5px);
+            text-decoration: none;
+            &:hover{
+                color: black;
+            }
+        }
+
+    }
+}
+table{
+    tr{
+        td{
+            a{
+                text-decoration: none;
+                color: #EBA13B;
+
+            }
+        }
+    }
+}
+#carouselImagenes{
+    grid-column: 3 / 7;
+    grid-row: 2 / 3;
+    justify-content: center;
+}
+.imagen{
+    width: 100%;
+    height: auto;
+}
+#tituloTabla{
+    display: flex;
+    justify-content: center;
+    @include boxModeling(10px,0);
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    text-align:justify;
+    @include boxModeling(10px,0);
+}
+.tabla__borde{
+    border: 1px solid #DE6943;
+    border-collapse: collapse;
+    color: #EBA13B;
+}
+.form{
+    color: #F58A3D;
+    width:50%;
+    align-items: center;
+    @include boxModeling(3px,5px);
+}
+.boton{
+    background-color:#F54A3B;
+    color:black;
+}
+#imagenYuji{
+    background-size: cover;
+}
+#botonLimpiar{
+    justify-content: flex-end;
+}
+label{
+    width: 180px;
+    padding-right: 20px;
+    color: #EBA13B;
+    white-space:nowrap;
+}
+.casilleros{
+    display: flex;
+    width:50%;
+    max-width:initial;
+    color: #F58A3D;
+}
+
+.flexbox{
+    @include boxModeling(10px,0);
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+#contenedorFormulario{
+    display: flex;
+    justify-content: center;
+}
+.tabla__header{
+    @extend .tabla__borde;
+    color: #F58A3D;
+    font-size: 85%;
+} 
+label{
+    display: block;
+}
+footer{
+    background-image: linear-gradient(to top,#61001F,#F54A3B );
+    color:#EBA13B;
+    display: block;
+    @include boxModeling(0,20px);
+}
+
+.galeria{
+     display: grid;
+     grid-template-columns: repeat(8,1fr);
+     grid-template-rows: repeat(8,5vw);
+     grid-gap: 15px;
+ }
+.galeria__objeto{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.galeria__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+#tituloImagenes{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.tabla__celda{
+    @extend .tabla__borde;
+}
+#listaCanciones{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 11;
+    justify-content: space-around;
+}
+
+#tituloSoundtrack{
+    grid-row-start: 14;
+    grid-row-end: 15;
+    
+}
+#playlist{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 16;
+    grid-row-end: 18;
+}
+#tituloClips{
+    grid-row-start: 18;
+    grid-row-end: 19;
+}
+
+#contenedorClips{
+    display: flex;
+    justify-content: space-around;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 19;
+    grid-row-end: 20;
+}
+.galeria__etiqueta{
+    width: 560px;
+    height: 315px;
+    text-align: center;
+    
+}
+#home{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+    object-fit: contain;
+}
+#logo{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.footer__copyright{
+    @extend .flexbox;
+    flex-direction: column;
+
+}
+#titulo{
+    text-align: center;
+    object-fit: cover;
+}
+#poster{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+header{
+    @include boxModeling(10px,0);
+}
+#descripcion{
+    font-size: 2rem;
+    grid-row-start: 6;
+    grid-row-end: 10;
+    grid-column-start:4 ;
+    grid-column-end: 9;
+    object-fit: cover;
+}
+
+.imagenHome{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.footer__redes{
+    @extend .flexbox;
+}
+.footer__imagen{
+    max-width: 100%;
+    height: auto;
+}
+.footer{
+    @extend .flexbox;
+    justify-content: space-between
+}
+.tabla__tr{
+    @extend .tabla__borde;
+    &:hover{
+        .tabla__celda{
+            background-color: black;
+            .tabla__link{
+                background-color: black;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:800px){
+    .parrafoAcerca{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:600px){
+    #menuInicio{
+        white-space:nowrap;
+        font-size: smaller;
+        @include boxModeling(0,2px);
+    }
+    .parrafoAcerca{
+        width: 100%;
+    }
+    #imagenYuji{
+        width: 100%;
+        height: auto;
+    }
+    header{
+        @include boxModeling(1px,0);
+    }
+    #logo{
+        grid-row-end: 5;
+    }
+    p{
+        font-size: 12px;
+    }
+    #poster{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 8;
+        grid-row-end: 11;
+    }
+    #carouselImagenes{
+        grid-column: 2 / 8;
+
+
+    }
+    #contenedorClips{
+        grid-column-end: 8;
+        justify-content: flex-start;
+    }
+    #clip1{
+        width: 100%;
+        height: auto;
+    }
+    #clip2{
+        width: 100%;
+        height: auto;
+    }
+    #descripcion{
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 12;
+        grid-row-end: 15;
+    }
+}
