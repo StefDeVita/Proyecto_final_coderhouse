@@ -267,7 +267,8 @@ header {
     grid-column: 2 / 8; }
   #contenedorClips {
     grid-column-end: 8;
-    justify-content: flex-start; }
+    display: flex;
+    justify-content: center; }
   #clip1 {
     width: 100%;
     height: auto; }
