@@ -197,6 +197,9 @@ footer {
 .footer__copyright {
   flex-direction: column; }
 
+#mensajeContacto {
+  text-align: center; }
+
 #titulo {
   text-align: center;
   object-fit: cover; }
