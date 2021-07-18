@@ -126,7 +126,7 @@ footer {
   grid-gap: 15px; }
 
 .galeria__objeto {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%; }
 
@@ -246,6 +246,12 @@ header {
     font-size: smaller;
     margin: 0;
     padding: 2px; }
+  .galeria__etiqueta {
+    font-size: smaller;
+    width: 100%;
+    height: auto; }
+    .galeria__etiqueta h3 {
+      font-size: smaller; }
   .parrafoAcerca {
     width: 100%; }
   #imagenYuji {
@@ -266,9 +272,15 @@ header {
   #carouselImagenes {
     grid-column: 2 / 8; }
   #contenedorClips {
-    grid-column-end: 8;
+    grid-column-end: 9;
     display: flex;
-    justify-content: center; }
+    justify-content: space-around; }
+  #opening {
+    width: 100%;
+    height: auto; }
+  #ending {
+    width: 100%;
+    height: auto; }
   #clip1 {
     width: 100%;
     height: auto; }
