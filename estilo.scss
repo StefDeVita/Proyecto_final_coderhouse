@@ -220,6 +220,12 @@ footer{
     flex-direction: column;
 
 }
+.tituloAcerca{
+    margin-left: 1%;
+}
+.subtituloAcerca{
+    margin-left: 1.5%;
+}
 #mensajeContacto{
     text-align: center;
 }
@@ -252,6 +258,9 @@ header{
 }
 .footer__redes{
     @extend .flexbox;
+}
+.parrafoAcerca{
+    margin-left: 1.7%;
 }
 .footer__imagen{
     max-width: 100%;
