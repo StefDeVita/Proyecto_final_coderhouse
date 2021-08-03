@@ -209,6 +209,16 @@ footer{
     grid-gap: 15px;
     object-fit: contain;
 }
+#imagen404{
+    width: 40%;
+}
+#error404{
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 #logo{
     grid-column-start: 1;
     grid-column-end: 9;
